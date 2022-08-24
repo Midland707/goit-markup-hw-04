@@ -5,7 +5,7 @@
  --fourth-color: #F5F4FA;
  --active-color: #2196F3;
 
- --dark-background-color: #2F303A;
+ --dark-background-color: #C4C4C4;
  --hero-button-background-active-color: #188CE8;
  
  --address-link-color: rgba(255, 255, 255, 0.6);
@@ -125,6 +125,16 @@ button {
     color: inherit;
 }
 
+.contacts-mail::before {
+    content:url("../images/email.svg");
+    padding-right: 10px;
+}
+
+.contacts-telefon::before {
+    content: url("../images/smartphone.svg");
+    padding-right: 10px;
+}
+
 .menu-link:hover,
 .menu-link:focus,
 .contacts-link:hover,
@@ -153,6 +163,17 @@ button {
 
 /* ######### STUDIO MAIN START ######### */
 .hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("../images/hero-background.jpg");
+    background-position: center;
+    background-size: cover;
+
     background-color:var(--dark-background-color);
     padding: 200px 0;
 }

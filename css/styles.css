@@ -124,11 +124,6 @@ button {
     letter-spacing: 0.02em;
     color: inherit;
 }
-.contacts-email-icon,
-.contacts-smartfone-icon {
-    margin-right: 10px;
-    fill:currentColor;
-}
 
 .menu-link:hover,
 .menu-link:focus,
@@ -144,6 +139,9 @@ button {
 }
 
 .contacts-link {
+    display: flex;
+    align-items: center;
+
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -153,7 +151,11 @@ button {
     padding-bottom: 32px;
 }
 
-
+.contacts-email-icon,
+.contacts-smartfone-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
 /* ######### HEADER END ######### */
 
 /* ######### STUDIO MAIN START ######### */

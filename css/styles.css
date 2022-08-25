@@ -296,7 +296,10 @@ button {
 
 .team-card-img {
     border-radius: 0px;
-    padding-bottom: 30px;
+}
+
+.team-card-title {
+    padding: 30px 0px;
 }
 
 .team-card-name {
@@ -304,7 +307,6 @@ button {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .team-card-work-position {
@@ -313,7 +315,42 @@ button {
     text-align: center;
     color: var(--second-color);
     margin:inherit;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    /* background-color: #ffffff; */
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--active-color);
+}
+
+.social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    background-color: var(--third-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: var(--third-color);
+    background-color: var(--active-color);
 }
 /* ######### STUDIO MAIN END ######### */
 

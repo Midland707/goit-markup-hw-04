@@ -4,8 +4,10 @@
  --third-color: #FFFFFF;
  --fourth-color: #F5F4FA;
  --active-color: #2196F3;
+ --icon-color: #afb1b8;
 
- --dark-background-color: #C4C4C4;
+ --light-background-color: #C4C4C4;
+ --dark-background-color: #2F303A;
  --hero-button-background-active-color: #188CE8;
  
  --address-link-color: rgba(255, 255, 255, 0.6);
@@ -171,7 +173,7 @@ button {
     background-position: center;
     background-size: cover;
 
-    background-color:var(--dark-background-color);
+    background-color:var(--light-background-color);
     padding: 200px 0;
 }
 
@@ -319,6 +321,8 @@ button {
     padding-bottom: 16px;
 }
 
+/* Social link */
+
 .social-list {
     display: flex;
     justify-content: center;
@@ -332,7 +336,6 @@ button {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    /* background-color: #ffffff; */
 }
 
 .social-list-link:hover,
@@ -343,7 +346,7 @@ button {
 .social-list-icon {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
+    fill: var(--icon-color);
     background-color: var(--third-color);
 }
 
@@ -351,6 +354,49 @@ button {
 .social-list-link:focus .social-list-icon {
     fill: var(--third-color);
     background-color: var(--active-color);
+}
+
+/* Постійні клієнти */
+.clients-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+}
+
+.clients-link {
+    padding: 16px 32px;
+}
+
+.client-icon {
+    fill: var(--icon-color);
+    width: 106px;
+    height: 60px;
+}
+
+.clients-list-item:hover .client-icon,
+.clients-list-item:focus .client-icon,
+.client-icon:hover,
+.clients-list-item:hover,
+.clients-list-item:focus
+{
+    fill: var(--active-color);
+    border-color: var(--active-color);
 }
 /* ######### STUDIO MAIN END ######### */
 

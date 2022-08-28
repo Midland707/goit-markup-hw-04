@@ -391,10 +391,8 @@ button {
 
 .clients-list-item:hover .client-icon,
 .clients-list-item:focus .client-icon,
-.client-icon:hover,
 .clients-list-item:hover,
-.clients-list-item:focus
-{
+.clients-list-item:focus {
     fill: var(--active-color);
     border-color: var(--active-color);
 }
@@ -405,6 +403,12 @@ button {
     background-color: var(--dark-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-box {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
 }
 
 .footer-rigth-logo {
@@ -437,6 +441,35 @@ button {
     line-height: 1.7;
     color: var(--address-link-color);
 }
+
+/* Footer social-link */
+
+.footer-social-box-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--third-color);
+    margin-bottom: 20px;
+}
+
+.footer-social-list-item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+    background-color: var(--active-color);
+}
+
+.footer-social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--third-color);
+}
+
 /* ######### FOOTER END ######### */
 
 /* ######### MAIN PORTFOLIO START ######### */

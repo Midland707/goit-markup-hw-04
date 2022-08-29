@@ -238,11 +238,12 @@ button {
 }
 
 .feature-title {
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .feature-description {
@@ -370,13 +371,16 @@ button {
 }
 
 .clients-list-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .clients-link {
-    padding: 15px 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
     border-radius: 4px;
     border: 1px solid var(--icon-color);
 }
@@ -540,6 +544,7 @@ button {
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
+    color: var(--primary-color);
 }
 
 .project-group p {
